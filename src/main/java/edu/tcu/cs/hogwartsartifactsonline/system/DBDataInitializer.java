@@ -69,6 +69,7 @@ public class DBDataInitializer implements CommandLineRunner {
         w1.setName("Albus Dumbledore");
         w1.addArtifact(a1);
         w1.addArtifact(a3);
+        // Don't manually set the id for the wizard, let the database generate it.
 
         Wizard w2 = new Wizard();
         w2.setName("Harry Potter");
@@ -91,6 +92,7 @@ public class DBDataInitializer implements CommandLineRunner {
         u1.setPassword("123456");
         u1.setEnabled(true);
         u1.setRoles("admin user");
+        // Don't manually set the id for the user, let the database generate it.
 
         HogwartsUser u2 = new HogwartsUser();
         u2.setUsername("eric");
